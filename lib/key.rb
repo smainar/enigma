@@ -6,7 +6,7 @@ class Key
   end
 
   def a_key
-    (@key[0] + @key[1]).to_i
+    @key[0..1].to_i
   end
 
   def b_key
