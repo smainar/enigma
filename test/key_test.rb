@@ -13,4 +13,8 @@ class KeyTest < Minitest::Test
     assert_equal "12345", @key.key
   end
 
+  def test_it_creates_two_digit_keys_from_a_to_d
+    assert_equal 12, @key.a_key
+  end
+
 end
