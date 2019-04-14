@@ -21,4 +21,8 @@ class Key
     (@key[3] + @key[4]).to_i
   end
 
+  def random_key
+    Random.rand(100000).to_s.rjust(5, "0")
+  end
+
 end

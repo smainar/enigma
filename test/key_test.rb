@@ -20,4 +20,8 @@ class KeyTest < Minitest::Test
     assert_equal 45, @key.d_key
   end
 
+  def test_it_can_create_random_key
+    assert_equal 5, @key.random_key.length
+  end
+
 end
