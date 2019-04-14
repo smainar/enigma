@@ -10,7 +10,7 @@ class Key
   end
 
   def b_key
-    (@key[1] + @key[2]).to_i
+    @key[1..2].to_i
   end
 
   def c_key
