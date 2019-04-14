@@ -18,7 +18,7 @@ class Key
   end
 
   def d_key
-    (@key[3] + @key[4]).to_i
+    @key[3..4].to_i
   end
 
   def random_key
