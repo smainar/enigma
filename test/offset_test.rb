@@ -21,4 +21,8 @@ class OffsetTest < Minitest::Test
     assert_equal "1715533561", @offset.offset_from_date
   end
 
+  def test_it_returns_offset_from_date_for_a_to_d
+   assert_equal 3, @offset.a_offset
+  end
+
 end

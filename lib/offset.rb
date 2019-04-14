@@ -13,4 +13,8 @@ class Offset
     (@date.to_i ** 2).to_s
   end
 
+  def a_offset
+    offset_from_date[-4].to_i
+  end
+
 end
