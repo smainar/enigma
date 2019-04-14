@@ -25,6 +25,7 @@ class OffsetTest < Minitest::Test
     assert_equal 3, @offset.a_offset
     assert_equal 5, @offset.b_offset
     assert_equal 6, @offset.c_offset
+    assert_equal 1, @offset.d_offset
   end
 
 end
