@@ -17,4 +17,8 @@ class OffsetTest < Minitest::Test
     assert_equal 6, @offset.todays_date.length
   end
 
+  def test_it_can_calculate_the_offset_from_the_date
+    assert_equal "1715533561", @offset.offset_from_date
+  end
+
 end
