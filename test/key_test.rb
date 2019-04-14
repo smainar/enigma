@@ -15,6 +15,7 @@ class KeyTest < Minitest::Test
 
   def test_it_creates_two_digit_keys_from_a_to_d
     assert_equal 12, @key.a_key
+    assert_equal 23, @key.b_key
   end
 
 end
