@@ -17,4 +17,8 @@ class Key
     (@key[2] + @key[3]).to_i
   end
 
+  def d_key
+    (@key[3] + @key[4]).to_i
+  end
+
 end

@@ -17,6 +17,7 @@ class KeyTest < Minitest::Test
     assert_equal 12, @key.a_key
     assert_equal 23, @key.b_key
     assert_equal 34, @key.c_key
+    assert_equal 45, @key.d_key
   end
 
 end
