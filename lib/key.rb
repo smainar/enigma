@@ -14,7 +14,7 @@ class Key
   end
 
   def c_key
-    (@key[2] + @key[3]).to_i
+    @key[2..3].to_i
   end
 
   def d_key
