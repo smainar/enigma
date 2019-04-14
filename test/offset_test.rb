@@ -22,8 +22,9 @@ class OffsetTest < Minitest::Test
   end
 
   def test_it_returns_offset_from_date_for_a_to_d
-   assert_equal 3, @offset.a_offset
-   assert_equal 5, @offset.b_offset
+    assert_equal 3, @offset.a_offset
+    assert_equal 5, @offset.b_offset
+    assert_equal 6, @offset.c_offset
   end
 
 end

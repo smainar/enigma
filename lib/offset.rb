@@ -21,4 +21,8 @@ class Offset
     offset_from_date[-3].to_i
   end
 
+  def c_offset
+    offset_from_date[-2].to_i
+  end
+
 end
