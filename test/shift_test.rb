@@ -15,4 +15,8 @@ class ShiftTest < Minitest::Test
     assert_equal @key, @shift.key
   end
 
+  def test_it_has_an_offset
+    assert_equal @offset, @shift.offset
+  end
+
 end
