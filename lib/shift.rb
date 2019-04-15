@@ -15,4 +15,8 @@ class Shift
     @key.b_key + @offset.b_offset
   end
 
+  def c_shift
+    @key.c_key + @offset.c_offset
+  end
+
 end

@@ -22,6 +22,7 @@ class ShiftTest < Minitest::Test
   def test_it_can_sum_key_and_offset_to_calculate_the_shifts
     assert_equal 15, @shift.a_shift
     assert_equal 28, @shift.b_shift
+    assert_equal 40, @shift.c_shift
   end
 
 end
