@@ -7,4 +7,8 @@ class Shift
     @offset = offset
   end
 
+  def a_shift
+    @key.a_key + @offset.a_offset
+  end
+
 end
