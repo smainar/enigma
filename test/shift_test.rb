@@ -26,4 +26,15 @@ class ShiftTest < Minitest::Test
     assert_equal 46, @shift.d_shift
   end
 
+  def test_it_can_return_hash_of_final_shifts
+    expected = {
+        :A => 15,
+        :B => 28,
+        :C => 40,
+        :D => 46
+    }
+
+    assert_equal expected, @shift.get_final_shifts
+  end
+
 end

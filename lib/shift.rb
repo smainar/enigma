@@ -23,4 +23,13 @@ class Shift
     @key.d_key + @offset.d_offset
   end
 
+  def get_final_shifts
+    final_shifts = Hash.new
+    final_shifts[:A] = a_shift
+    final_shifts[:B] = b_shift
+    final_shifts[:C] = c_shift
+    final_shifts[:D] = d_shift
+    final_shifts
+  end
+
 end
