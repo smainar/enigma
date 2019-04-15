@@ -11,4 +11,8 @@ class ShiftTest < Minitest::Test
     assert_instance_of Shift, @shift
   end
 
+  def test_it_has_a_key
+    assert_equal @key, @shift.key
+  end
+
 end
