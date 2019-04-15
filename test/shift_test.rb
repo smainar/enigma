@@ -23,6 +23,7 @@ class ShiftTest < Minitest::Test
     assert_equal 15, @shift.a_shift
     assert_equal 28, @shift.b_shift
     assert_equal 40, @shift.c_shift
+    assert_equal 46, @shift.d_shift
   end
 
 end
