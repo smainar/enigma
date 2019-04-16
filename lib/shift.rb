@@ -36,19 +36,19 @@ class Shift
     ("a".."z").to_a << " "
   end
 
-  def encrypt(message)
+  def get_encryption(message)
     split_characters = message.downcase.chars
     total_shifts = get_final_shifts
     encrypted_message = []
     split_characters.each_with_index do |character, index|
       if character_set.include?(character)
-        encrypted_message << character_set.index(character) + total_shifts.values[index % 4]
+        letter_index = character_set.find_index(character)
+        encrypted_message << character_set.rotate(total_shifts.values[index % 4])[letter_index]
       else
         encrypted_message << character
       end
     end
-    index_array = encrypted_message.map {|shifted_index| shifted_index % 27}
-    index_array.map {|new_index| character_set[new_index]}.join
+    encrypted_message.join
   end
 
 end

@@ -48,7 +48,7 @@ class ShiftTest < Minitest::Test
     offset = Offset.new("040895")
     shift = Shift.new(key, offset)
 
-    assert_equal "keder ohulw", shift.encrypt("hello world")
+    assert_equal "keder,sprrdx!", shift.get_encryption("hello, world!")
   end
 
 end
