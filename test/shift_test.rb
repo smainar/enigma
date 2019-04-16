@@ -26,4 +26,29 @@ class ShiftTest < Minitest::Test
     assert_equal 46, @shift.d_shift
   end
 
+  def test_it_can_return_hash_of_final_shifts
+    expected = {
+        :A => 15,
+        :B => 28,
+        :C => 40,
+        :D => 46
+    }
+
+    assert_equal expected, @shift.get_final_shifts
+  end
+
+  def test_it_can_return_standard_lowercase_alphabet_of_27_characters
+    expected = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"," "]
+
+    assert_equal expected, @shift.character_set
+  end
+
+  def test_it_can_encrypt_a_message
+    key = Key.new ("02715")
+    offset = Offset.new("040895")
+    shift = Shift.new(key, offset)
+
+    assert_equal "keder ohulw", shift.encrypt("hello world")
+  end
+
 end
