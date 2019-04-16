@@ -51,4 +51,19 @@ class Shift
     encrypted_message.join
   end
 
+  def get_decryption(message)
+    split_characters = message.downcase.chars
+    total_shifts = get_final_shifts
+    decrypted_message = []
+    split_characters.each_with_index do |character, index|
+      if character_set.include?(character)
+        letter_index = character_set.find_index(character)
+        decrypted_message << character_set.rotate(-total_shifts.values[index % 4])[letter_index]
+      else
+        decrypted_message << character
+      end
+    end
+    decrypted_message.join
+  end
+
 end

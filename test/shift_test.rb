@@ -51,4 +51,12 @@ class ShiftTest < Minitest::Test
     assert_equal "keder,sprrdx!", shift.get_encryption("hello, world!")
   end
 
+  def test_it_can_decrypt_a_message
+    key = Key.new ("02715")
+    offset = Offset.new("040895")
+    shift = Shift.new(key, offset)
+
+    assert_equal "hello, world!", shift.get_decryption("keder,sprrdx!")
+  end
+
 end
