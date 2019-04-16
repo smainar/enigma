@@ -37,4 +37,10 @@ class ShiftTest < Minitest::Test
     assert_equal expected, @shift.get_final_shifts
   end
 
+  def test_it_can_return_standard_lowercase_alphabet_of_27_characters
+    expected = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"," "]
+
+    assert_equal expected, @shift.character_set
+  end
+
 end
