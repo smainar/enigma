@@ -50,3 +50,5 @@ class Shift
     end
     encrypted_message.join
   end
+
+end
