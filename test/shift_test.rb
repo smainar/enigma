@@ -67,7 +67,7 @@ class ShiftTest < Minitest::Test
     assert_equal "hello world", shift.get_decryption("keder ohulw")
   end
 
-  def test_it_can_decrypt_a_message
+  def test_it_can_decrypt_a_message_with_characters_not_included_in_original_character_set
     key = Key.new ("02715")
     offset = Offset.new("040895")
     shift = Shift.new(key, offset)
